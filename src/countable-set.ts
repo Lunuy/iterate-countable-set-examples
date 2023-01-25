@@ -291,7 +291,7 @@ type TreeStructure = TreeStructure[];
 export function treeStructure(n: number): TreeStructure {
     if (n === 0) return [];
 
-    const [a, b] = naturalTuple2(n);
+    const [a, b] = naturalTuple2(n - 1);
     const childNumber = a + 1;
     const numbers = naturalTuple(childNumber)(b);
 
